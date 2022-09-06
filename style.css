@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    
+}
+
+.netflix1 {
+    background-color: #b1060f;
+    height: 250px;
+    width: 60px;
+    position: relative;
+}
+
+.netflix1::before {
+    background: #b1060f;
+    height: 250px;
+    width: 60px;
+    position: absolute;
+    content: '';
+    left: 90px;
+}
+
+.netflix1::after {
+    background: black;
+    height: 20px;
+    width: 175px;
+    position: absolute;
+    content: '';
+    left: -15px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+
+span {
+    position: absolute;
+    height: 250px;
+    width: 60px;
+    background-color: #e50913;
+    left: 46px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px;
+}
+
+/* comparação com logo netflix da internet */
+.netflix2 {
+    width: 140px;
+    height: 250px;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        90deg,
+        #b1060e 0,
+        #b1060e 50px,
+        transparent 50px,
+        transparent 90px,
+        #b1060e 90px,
+        #b1060e 140px
+    );
+}
+
+.netflix2::before, .netflix::after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.netflix2::before {
+    width: 50px;
+    height: 250px;
+    top: 0;
+    left: 45px;
+    background-color: #e50914;
+    transform: skewX(19.6deg);
+    box-shadow: 0 0 30px black;
+}
+
+.netflix2::after {
+    width: 190px;
+    height: 25px;
+    top: 245px;
+    left: -25px;
+    border-radius: 50%;
+    background-color: black;
+}
